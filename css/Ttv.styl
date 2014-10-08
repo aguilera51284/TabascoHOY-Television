@@ -1,0 +1,175 @@
+/*IMPORTANDO LIBRERIAS DE NIB*/
+@import 'nib/gradients'
+@import 'nib/vendor'
+/* VARIABLES */
+vendor-prefix = o ms moz webkit
+azulito = #008bcf
+lila 	= #e2007a
+gris 	= #b2b2b3
+rosado  = #e2007a
+
+html,body
+	background-color #fff
+	width 100%
+	font-size 16px
+	margin 0
+	padding 0 
+h2
+	color azulito
+	padding-bottom 50px
+h4
+	color azulito
+	text-align justify
+header
+	width 100%
+	margin 0
+	padding 0
+	border solid 1px orange
+	position fixed
+	background-color #fff
+	z-index 3
+
+/*CLASES DEL HEADER*/
+.h-contenido
+	width 80%
+	margin 10px auto
+	position relative
+	.h-logo
+		width 49%
+		display inline-block
+		vertical-align top
+		height 70px
+		figure
+			img
+				vertical-align bottom
+			figcaption
+				display inline-block
+				vertical-align middle
+				color azulito
+				font-weight bolder
+				font-style italic
+	.h-infopro
+		width 49%
+		position absolute
+		display inline-block 
+		right 0
+		vertical-align top
+		height 70px
+		ul
+			list-style none
+			text-align right
+			padding 0
+			margin 0
+			li
+				padding 4px 0
+				width 100%
+				.h-titulo
+					width 60%
+					display inline-block
+					vertical-align top
+					text-align right
+					margin-right 3%
+				.h-concepto
+					width 30%
+					display inline-block
+					vertical-align top
+					text-align left
+					font-weight 800
+
+/* CONTENIDO  LANDING */
+.content-landing
+	padding-top 100px
+	.la-visor,.la-twitter
+		border solid 1px red
+		display inline-block
+		vertical-align top
+		color #fff
+		font-weight 800
+	.la-visor
+		width 60%
+	.la-twitter
+		width 35%
+
+/*CONTENIDO ARBITRARIO*/
+.videos-recientes,.siguenos-facebook,.detras-camara
+	display inline-block
+	vertical-align top
+	border solid 1px blue
+	height 700px
+.videos-recientes
+	width 38%
+	position relative
+	vertical-align top
+	.ladrillo-1,.ladrillo-2
+		display inline-block
+		vertical-align top
+	.ladrillo-1
+		width 300px
+		figcaption
+			width 250px
+			margin 0 auto
+			padding-bottom 10px
+	.ladrillo-2
+		width 250px
+		right 10px
+		position absolute
+		figcaption
+			width 200px
+			margin 0 auto
+			padding-bottom 10px
+
+.siguenos-facebook
+	width 30%
+.detras-camara
+	width 30%
+	
+
+/*************************
+	Atributos globales
+*************************/
+/*LANDING PAGE*/
+.landing
+	height 800px
+	width 100%
+	position relative
+	background url('../img/patron01.png')
+	background-repeat repeat
+
+/*GRID PARA SECCIONES*/
+.grid
+	width 80%
+	margin 0 auto
+
+
+.ven-100
+	width 100%
+	position relative
+	background url('../img/wallpeper-1.png')
+	background-repeat no-repeat
+	background-size cover
+	background-position center
+
+.publicidad
+	width 100%
+	background-color #f2f0f0
+	padding 20px 0
+	img
+		width 100%
+
+
+	
+
+
+/*CLASES*/
+.fz-interiores
+	font-size 0.9em
+	color gris
+.border-grid
+	border-bottom 1px solid gris
+	padding 50px 0
+.br-glo
+	border solid 1px #d9d9d7
+.mrt-300
+	margin-top 250px
+/*IMPORTO MODULOS ADICIONALES*/
+@import 'iconos.styl'
