@@ -1,4 +1,4 @@
-TabascoHOY-Televisi-n
+TabascoHOY-Television
 =====================
 
 Nuevo diseño de Tabasco HOY Televisión
