@@ -13,7 +13,7 @@ html,body
 	width 100%
 	font-size 16px
 	margin 0
-	padding 0 
+	padding 0
 h2
 	color azulito
 	padding-bottom 50px
@@ -24,11 +24,11 @@ header
 	width 100%
 	margin 0
 	padding 0
-	border solid 1px orange
 	position fixed
 	background-color #fff
-	z-index 3
+	z-index 4
 	transition all 1s ease-in-out
+	border-bottom solid 2px rosado
 	/*Arregla en chrome el parpadeo del scroll con el menu fixed*/
 	transform: translateZ(0);
 a
@@ -39,24 +39,40 @@ footer
 	width 100%
 	background-color azulito
 	color #fff
+	position relative
 	.f-contend
 		width 19%
 		display inline-block
 		margin-right -4px
 		padding 20px 0.5%
 		vertical-align top
+		position relative
 		ul
 			width 100%
 			list-style none
-			padding 0
+			padding 10px 0
 			margin 0
 			display inline-block
 			li
 				padding 5px 0
+				cursor pointer
+
+		.f-footer
+			width 100%
+			position absolute
+			text-align center
+			top 300%
+
 	.titulo
-		font-size 1.3em
+		font-size 1.4em
 		padding 10px 0 !important
 		border-bottom solid 2px #33a2d9
+		cursor default !important
+		font-weight bolder
+	.especial-redes
+		padding 15px 5px !important
+	.ma-ri-icon
+		margin-right 5px
 
 
 /*CLASES DEL HEADER*/
@@ -68,7 +84,7 @@ footer
 		width 49%
 		display inline-block
 		vertical-align top
-		height 70px
+		height 75px
 		figure
 			img
 				vertical-align bottom
@@ -81,7 +97,7 @@ footer
 	.h-infopro
 		width 49%
 		position absolute
-		display inline-block 
+		display inline-block
 		right 0
 		vertical-align top
 		height 70px
@@ -111,7 +127,87 @@ footer
 						transition 0.5s all ease
 						&:hover
 							color rosado
-				
+
+.icono-menu-vista
+	position absolute
+	top 25%
+	left 0
+	width 10%
+	.mos-icono
+		margin 0 auto
+		font-size 2em
+		color gris
+		display block
+		width 80%
+		text-align center
+		&:hover
+			cursor pointer
+.mostrar-menu
+	transform translate(100%,0)
+.ocultar-menu
+	transform translate(-100%,0)
+
+.menu-fuertote
+	position fixed
+	top 0
+	left -20%
+	z-index 30 !important
+	width 20%
+	background-color #008bcf
+	transition 1s ease-in-out
+	overflow scroll !important
+	overflow-x hidden !important
+	height 100% !important
+
+	&::-webkit-scrollbar
+		width 15px
+		height 15px
+	&::-webkit-scrollbar-track-piece
+		background-color #C2D2E4
+	&::-webkit-scrollbar-thumb:vertical
+		height 30px
+		background-color #55C7FF
+
+	.m-header
+		width 100%
+		height 150px
+		position relative
+		background-image url('../img/menu-header.png')
+		background-position center
+		background-repeat none
+		background-size cover
+	.m-body
+		width 100%
+		position relative
+		color #fff
+		h6
+			font-size 1.2em
+			padding 10px 0
+			width 95%
+			margin 0 auto
+		ul
+			width 100%
+			margin 0 auto
+			list-style none
+			padding 0
+			transition all 0.1s linear
+			&:hover
+				width 100%
+				margin 0
+
+			li
+				font-size 1em
+				padding 10px 15px
+				transition all 0.4s linear
+				&:hover
+					border-left solid 5px rosado
+					background-color #72B6D7
+
+
+
+
+
+
 
 /* CONTENIDO  LANDING */
 .content-landing
@@ -197,10 +293,13 @@ footer
 	top 50%
 .flecha-izquierda
 	left -5%
-	
+
 .flecha-derecha
 	right -5%
-	
+
+.programas
+	img
+		border solid 1px gris
 
 /*Especial*/
 .especial
@@ -222,13 +321,13 @@ footer
 					width 280px
 					padding 10px
 					margin 0 auto
-					
+
 
 .titulo-especial
 	h2,a
 		display inline-block
 		margin 0
-		padding 0	
+		padding 0
 
 
 .especial-2
@@ -261,8 +360,8 @@ footer
 				color white
 				font-size 1.4em
 				padding 40px 0
-				
-			a 
+
+			a
 				padding 10px 20px
 				background-color azulito
 				position absolute
@@ -277,8 +376,8 @@ footer
 		position relative
 		ul
 			list-style none
-			
-			padding 0 
+
+			padding 0
 			margin 0
 			li
 				display inline-block
@@ -289,8 +388,8 @@ footer
 				font-size 1.5em
 				font-weight 800
 				border-bottom solid 1px gris
-				margin-right -4px
-				
+				margin-right -6px
+
 				&:hover
 					color rosado
 			.tab-seleccionado
@@ -298,7 +397,9 @@ footer
 				border-bottom 1px solid #fff !important
 				border-right 1px solid gris !important
 				border-left 1px solid gris !important
-					
+			.tab-noseleccionado
+				border 0
+
 
 /*************************
 	Atributos globales
@@ -334,7 +435,7 @@ footer
 		width 100%
 
 
-	
+
 
 
 /*CLASES*/
@@ -349,14 +450,49 @@ footer
 .mrt-300
 	margin-top 280px
 
-#fb-root 
+#fb-root
     display none
+.ocultar
+	display none !important
+.mostrar
+	display block
+.fondo-opaco
+	opacity 0.4 !important
 
 
 /* To fill the container and nothing else */
 
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] 
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]
 	width 100% !important
+
+/*Animaciones*/
+
+.box-ani
+	width 100%
+	position absolute
+	top 50%
+.ani-cargando
+	animation cargar 1.5s linear infinite
+	display block
+	width 80px
+	margin 0 auto
+	color rosado
+	text-align center
+	font-size 5em
+	height 100%
+
+
+@keyframes cargar
+	0%
+		transform:rotate (0deg);
+	25%
+		transform:rotate(90deg);
+	50%
+		transform:rotate(180deg);
+	75%
+		transform:rotate(270deg);
+	100%
+		transform:rotate(360deg);
 
 /*IMPORTO MODULOS ADICIONALES*/
 @import 'iconos.styl'
