@@ -5,7 +5,7 @@
 /* VARIABLES */
 vendor-prefix = o ms moz webkit
 azulito= #008bcf
-gris = #b2b2b3
+gris = #d9d9d7
 rosado = #e2007a
 
 html,body
@@ -19,7 +19,7 @@ h2
 	padding-bottom 50px
 h4
 	color azulito
-	text-align justify
+	text-align left
 header
 	width 100%
 	margin 0
@@ -27,7 +27,7 @@ header
 	position fixed
 	background-color #fff
 	z-index 4
-	transition all 1s ease-in-out
+	transition all 0.4s ease-in-out
 	border-bottom solid 2px rosado
 	/*Arregla en chrome el parpadeo del scroll con el menu fixed*/
 	transform: translateZ(0);
@@ -154,7 +154,7 @@ footer
 	z-index 30 !important
 	width 20%
 	background-color #008bcf
-	transition 1s ease-in-out
+	transition 0.6s ease-in-out
 	overflow scroll !important
 	overflow-x hidden !important
 	height 100% !important
@@ -200,7 +200,7 @@ footer
 				padding 10px 15px
 				transition all 0.4s linear
 				&:hover
-					border-left solid 5px rosado
+					border-left solid 8px rosado
 					background-color #72B6D7
 
 
@@ -289,7 +289,7 @@ footer
 	position absolute
 	vertical-align top
 	color gris
-	font-size 4em
+	font-size 6em
 	top 50%
 .flecha-izquierda
 	left -5%
@@ -297,9 +297,6 @@ footer
 .flecha-derecha
 	right -5%
 
-.programas
-	img
-		border solid 1px gris
 
 /*Especial*/
 .especial
@@ -337,6 +334,7 @@ footer
 	background-repeat no-repeat
 	background-position center
 	background-size cover
+	padding 20px
 	.especial-cont
 		.visor-especial2
 			width 40%
@@ -458,6 +456,48 @@ footer
 	display block
 .fondo-opaco
 	opacity 0.4 !important
+////////////////////////////////////////
+//Clase diseño Caja Imagen + Contenido//
+////////////////////////////////////////
+.box-contend
+	border solid 1px gris
+	margin 0 auto 0 15px
+	height 100%
+	width 300px
+	figure
+		width 100%
+		margin 0
+		padding 0
+		vertical-align top
+		height 350px
+		img
+			width 100%
+			display block
+			margin 0 auto
+			padding 0 auto
+			
+
+		figcaption
+			width 90%
+			margin 0 auto
+/*Tamaños*/
+.box-small
+	width 20%
+.box-medium
+	width 25%
+.box-large
+	width 50%
+.box-phone
+	width 100%
+/*Texto*/
+.box-titulo
+	color azulito
+	font-size 1.4em
+.box-texto
+	color #A8A8A8
+	font-size 1em
+	padding 10px 0
+
 
 
 /* To fill the container and nothing else */
