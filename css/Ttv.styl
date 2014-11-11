@@ -238,19 +238,34 @@ footer
 		display inline-block
 		vertical-align top
 	.ladrillo-1
-		width 300px
-		figcaption
-			width 250px
-			margin 0 auto
-			padding-bottom 10px
+		width 60%
+		figure
+			width 100%
+			img.center
+				max-width 100%
+				display block
+				margin-left auto
+				margin-right auto
+			figcaption
+				width 90%
+				margin 0 auto
+				padding-bottom 10px
 	.ladrillo-2
-		width 250px
+		width 30%
 		right 10px
 		position absolute
-		figcaption
-			width 200px
-			margin 0 auto
-			padding-bottom 10px
+		figure
+			width 100%
+			img.center
+				max-width 100%
+				display block
+				margin-left auto
+				margin-right auto
+			figcaption
+				width 90%
+				margin 0 auto
+				padding-bottom 10px
+				text-align center
 
 .siguenos-facebook
 	width 30%
@@ -297,7 +312,12 @@ footer
 
 .flecha-derecha
 	right -5%
-
+.programas
+	width 100%
+	.item
+		margin-left 20px
+		img
+			max-width 100%
 
 /*Especial*/
 .especial
@@ -335,19 +355,25 @@ footer
 	background-repeat no-repeat
 	background-position center
 	background-size cover
-	padding 20px
+	padding 50px 0
+	position relative
+
 	.especial-cont
+		position relative
+		border solid 1px yellow
+		padding 30px 0
+		.visor-especial2,.texto-especial2
+			display inline-block
+			vertical-align top
 		.visor-especial2
 			width 40%
-			display inline-block
-			vertical-align top
-			padding 20px 0
+			border solid 1px grey
+			margin-right 2.5%
+			img
+				max-width 100%
 		.texto-especial2
-			width 50%
-			display inline-block
-			vertical-align top
-			padding 20px 0
-			position relative
+			width 55%
+			border solid 1px white
 			h2
 				color rosado
 				font-weight 800
@@ -359,15 +385,14 @@ footer
 				color white
 				font-size 1.4em
 				padding 40px 0
+				position relative
 
 			a
 				padding 10px 20px
 				background-color azulito
-				position absolute
-				left 0
-				bottom 0
-				top 10
 				color white
+				margin 40px 0 0 0
+
 
 /*Tabulador*/
 	.tab
@@ -565,3 +590,4 @@ footer
 
 /*IMPORTO MODULOS ADICIONALES*/
 @import 'iconos.styl'
+@import 'responsive.styl'
